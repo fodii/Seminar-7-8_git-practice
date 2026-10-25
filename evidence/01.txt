@@ -1,0 +1,320 @@
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit branch --show-current[27mgit branch --show-current
+[?2004lfeature/task-01
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit status --short[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit status --short
+[A
+[?2004l[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit rev-parse HEAD[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit rev-parse HEAD
+[A
+[?2004la7d733010b09bac1cfb762be34f9c2e9ad44e00c
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mcat reset-demo.txt[27mcat reset-demo.txt
+[?2004lB
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit tag evidence/01-soft-before a7d7330[27mgit tag evidence/01-soft-before a7d7330
+[?2004l[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit push origin evidence/01-soft-before[27mgit push origin evidence/01-soft-before
+[?2004lTotal 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/fodii/Seminar-7-8_git-practice.git
+ * [new tag]         evidence/01-soft-before -> evidence/01-soft-before
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit reset --soft 2fd892b[27mgit reset --soft 2fd892b
+[?2004l[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit rev-parse HEAD[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit rev-parse HEAD
+[A
+[?2004l2fd892b883d58b35d0c8cf5032e2e98303ab229a
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit status --short[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit status --short
+[A
+[?2004l[32mM[m  reset-demo.txt
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit diff --cached[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit diff --cached
+[A
+[?2004l[?1h=[1mdiff --git a/reset-demo.txt b/reset-demo.txt[m[m
+[1mindex f70f10e..223b783 100644[m[m
+[1m--- a/reset-demo.txt[m[m
+[1m+++ b/reset-demo.txt[m[m
+[36m@@ -1 +1 @@[m[m
+[31m-A[m[m
+[32m+[m[32mB[m[m
+[K[?1l>[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit diff[27mgit diff
+[?2004l[?1h=[K[?1l>[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mcat reset-demo.txt[27mcat reset-demo.txt
+[?2004lB
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit push --force-with-lease origin feature/task-01[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit push --force-with-lease origin feature/task-01
+[?2004lTotal 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/fodii/Seminar-7-8_git-practice.git
+ + a7d7330...2fd892b feature/task-01 -> feature/task-01 (forced update)
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit commit -m "task 01: restore B after soft reset"[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit commit -m "task 01: restore B after soft reset"
+[A
+[?2004l[feature/task-01 6a51697] task 01: restore B after soft reset
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit push origin feature/task-01[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit push origin feature/task-01
+[A
+[?2004lEnumerating objects: 5, done.
+Counting objects:  20% (1/5)Counting objects:  40% (2/5)Counting objects:  60% (3/5)Counting objects:  80% (4/5)Counting objects: 100% (5/5)Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects:  50% (1/2)Compressing objects: 100% (2/2)Compressing objects: 100% (2/2), done.
+Writing objects:  33% (1/3)Writing objects:  66% (2/3)Writing objects: 100% (3/3)Writing objects: 100% (3/3), 285 bytes | 285.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/fodii/Seminar-7-8_git-practice.git
+   2fd892b..6a51697  feature/task-01 -> feature/task-01
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit log --oneline -4[27mgit log --oneline -4
+[?2004l[?1h=[33m6a51697[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfeature/task-01[m[33m, [m[1;31morigin/feature/task-01[m[33m)[m task 01: restore B after soft reset[m
+[33m2fd892b[m reset 01: состояние A[m
+[33m1f1f39e[m task 01: форма и инструкция[m
+[33m94c1290[m[33m ([m[1;33mtag: [m[1;33mlab-start[m[33m)[m История 12: изменение проекта[m
+[K[?1l>[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mecho "A2" > reset-demo.txt[27m
+[7mgit add reset-demo.txt[27m
+[7mgit commit -m "task 01 mixed: state A2"[27m[A[A]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ echo "A2" > reset-demo.txt
+git add reset-demo.txt
+[1Pgit commit -m "task 01 mixed: state A2[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[7mecho "A2" > reset-demo.txt[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho "A2" > reset-demo.txt
+[A
+[?2004l[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit add reset-demo.txt[27mgit add reset-demo.txt
+[?2004l[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit commit -m "task 01 mixed: state A2"[27mgit commit -m "task 01 mixed: state A2"
+[?2004l[feature/task-01 8ce0966] task 01 mixed: state A2
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mecho "B2" > reset-demo.txt[27mecho "B2" > reset-demo.txt
+[?2004l[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit add reset-demo.txt[27mgit add reset-demo.txt
+[?2004l[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit commit -m "task 01 mixed: state B2"[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit commit -m "task 01 mixed: state B2"
+[A
+[?2004l[feature/task-01 b1a6dec] task 01 mixed: state B2
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit rev-parse HEAD~1[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit rev-parse HEAD~1
+[A
+[?2004l8ce0966b73326206c19d4cc2f5e4dbaf28e15ccb
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit rev-parse HEAD[27mgit rev-parse HEAD
+[?2004lb1a6dec4e03f39d6f374d59ab8a0f000e6f47d03
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit push origin feature/task-01[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit push origin feature/task-01
+[A
+[?2004lEnumerating objects: 8, done.
+Counting objects:  12% (1/8)Counting objects:  25% (2/8)Counting objects:  37% (3/8)Counting objects:  50% (4/8)Counting objects:  62% (5/8)Counting objects:  75% (6/8)Counting objects:  87% (7/8)Counting objects: 100% (8/8)Counting objects: 100% (8/8), done.
+Delta compression using up to 16 threads
+Compressing objects:  25% (1/4)Compressing objects:  50% (2/4)Compressing objects:  75% (3/4)Compressing objects: 100% (4/4)Compressing objects: 100% (4/4), done.
+Writing objects:  16% (1/6)Writing objects:  33% (2/6)Writing objects:  50% (3/6)Writing objects:  66% (4/6)Writing objects:  83% (5/6)Writing objects: 100% (6/6)Writing objects: 100% (6/6), 529 bytes | 529.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 1 local object.[K
+To https://github.com/fodii/Seminar-7-8_git-practice.git
+   6a51697..b1a6dec  feature/task-01 -> feature/task-01
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit tag evidence/01-mixed-before HEAD[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit tag evidence/01-mixed-before HEAD
+[A
+[?2004l[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit push origin evidence/01-mixed-before[27mgit push origin evidence/01-mixed-before
+[?2004lTotal 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/fodii/Seminar-7-8_git-practice.git
+ * [new tag]         evidence/01-mixed-before -> evidence/01-mixed-before
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit reset --mixed HEAD~1[27mgit reset --mixed HEAD~1
+[?2004lUnstaged changes after reset:
+M	reset-demo.txt
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit reset --mixed HEAD~1[27mgit reset --mixed HEAD~1
+[?2004lUnstaged changes after reset:
+M	reset-demo.txt
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit rev-parse HEAD[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit rev-parse HEAD
+[A
+[?2004l6a51697fe3c400e637478e510cff6083368d3d68
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit status --short[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit status --short
+[A
+[?2004l [31mM[m reset-demo.txt
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit diff --cached[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit diff --cached
+[A
+[?2004l[?1h=[K[?1l>[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit diff[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit diff
+[A
+[?2004l[?1h=[1mdiff --git a/reset-demo.txt b/reset-demo.txt[m[m
+[1mindex 223b783..6d8ba7c 100644[m[m
+[1m--- a/reset-demo.txt[m[m
+[1m+++ b/reset-demo.txt[m[m
+[36m@@ -1 +1 @@[m[m
+[31m-B[m[m
+[32m+[m[32mB2[m[m
+[K[?1l>[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mcat reset-demo.txt[27mcat reset-demo.txt
+[?2004lB2
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit push --force-with-lease origin feature/task-01[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit push --force-with-lease origin feature/task-01
+[A
+[?2004lTotal 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/fodii/Seminar-7-8_git-practice.git
+ + b1a6dec...6a51697 feature/task-01 -> feature/task-01 (forced update)
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit add reset-demo.txt[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit add reset-demo.txt
+[A
+[?2004l[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit commit -m "task 01: restore B2 after mixed reset"[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit commit -m "task 01: restore B2 after mixed reset"
+[A
+[?2004l[feature/task-01 0c3e434] task 01: restore B2 after mixed reset
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit push origin feature/task-01[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit push origin feature/task-01
+[A
+[?2004lEnumerating objects: 5, done.
+Counting objects:  20% (1/5)Counting objects:  40% (2/5)Counting objects:  60% (3/5)Counting objects:  80% (4/5)Counting objects: 100% (5/5)Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects:  50% (1/2)Compressing objects: 100% (2/2)Compressing objects: 100% (2/2), done.
+Writing objects:  33% (1/3)Writing objects:  66% (2/3)Writing objects: 100% (3/3)Writing objects: 100% (3/3), 287 bytes | 287.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/fodii/Seminar-7-8_git-practice.git
+   6a51697..0c3e434  feature/task-01 -> feature/task-01
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit log --oneline -5[27mgit log --oneline -5
+[?2004l[?1h=[33m0c3e434[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfeature/task-01[m[33m, [m[1;31morigin/feature/task-01[m[33m)[m task 01: restore B2 after mixed reset[m
+[33m6a51697[m task 01: restore B after soft reset[m
+[33m2fd892b[m reset 01: состояние A[m
+[33m1f1f39e[m task 01: форма и инструкция[m
+[33m94c1290[m[33m ([m[1;33mtag: [m[1;33mlab-start[m[33m)[m История 12: изменение проекта[m
+[K[?1l>[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit status --short[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit status --short
+[A
+[?2004l[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit switch --detach evidence/01-mixed-before[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit switch --detach evidence/01-mixed-before
+[A
+[?2004lHEAD is now at b1a6dec task 01 mixed: state B2
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit reset --mixed HEAD~1[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit reset --mixed HEAD~1
+[A
+[?2004lUnstaged changes after reset:
+M	reset-demo.txt
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit rev-parse HEAD[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit rev-parse HEAD
+[A
+[?2004l8ce0966b73326206c19d4cc2f5e4dbaf28e15ccb
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit status --short[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit status --short
+[A
+[?2004l [31mM[m reset-demo.txt
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit diff --cached[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit diff --cached
+[A
+[?2004l[?1h=[K[?1l>[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit diff[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit diff
+[A
+[?2004l[?1h=[1mdiff --git a/reset-demo.txt b/reset-demo.txt[m[m
+[1mindex 3ce238a..6d8ba7c 100644[m[m
+[1m--- a/reset-demo.txt[m[m
+[1m+++ b/reset-demo.txt[m[m
+[36m@@ -1 +1 @@[m[m
+[31m-A2[m[m
+[32m+[m[32mB2[m[m
+[K[?1l>[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mcat reset-demo.txt[27mcat reset-demo.txt
+[?2004lB2
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit restore -- reset-demo.txt[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit restore -- reset-demo.txt
+[A
+[?2004l[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit switch feature/task-01[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit switch feature/task-01
+[A
+[?2004lPrevious HEAD position was 8ce0966 task 01 mixed: state A2
+Switched to branch 'feature/task-01'
+Your branch is up to date with 'origin/feature/task-01'.
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit status --short[27mgit status --short
+[?2004l[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mecho "A3" > reset-demo.txt[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho "A3" > reset-demo.txt
+[A
+[?2004l[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit add reset-demo.txt[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit add reset-demo.txt
+[A
+[?2004l[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit commit -m "task 01 hard: state A3"[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit commit -m "task 01 hard: state A3"
+[A
+[?2004l[feature/task-01 8f54d60] task 01 hard: state A3
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mecho "B3" > reset-demo.txt[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho "B3" > reset-demo.txt
+[A
+[?2004l[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit add reset-demo.txt[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit add reset-demo.txt
+[A
+[?2004l[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit commit -m "task 01 hard: state B3"[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit commit -m "task 01 hard: state B3"
+[A
+[?2004l[feature/task-01 81c04dd] task 01 hard: state B3
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit rev-parse HEAD~1[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit rev-parse HEAD~1
+[A
+[?2004l8f54d60efbd311614bd7aa79e15a3bbb26bec0e6
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit rev-parse HEAD[27mgit rev-parse HEAD
+[?2004l81c04dd11ecbb2b990b449a0d11be5baf952e294
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit push origin feature/task-01[27m
+[7mgit tag evidence/01-hard-before HEAD[27m
+[7mgit push origin evidence/01-hard-before[27m[A[A]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ git push origin feature/task-01
+git tag evidence/01-hard-before HEAD
+git push origin evidence/01-hard-before
+[?2004lEnumerating objects: 8, done.
+Counting objects:  12% (1/8)Counting objects:  25% (2/8)Counting objects:  37% (3/8)Counting objects:  50% (4/8)Counting objects:  62% (5/8)Counting objects:  75% (6/8)Counting objects:  87% (7/8)Counting objects: 100% (8/8)Counting objects: 100% (8/8), done.
+Delta compression using up to 16 threads
+Compressing objects:  25% (1/4)Compressing objects:  50% (2/4)Compressing objects:  75% (3/4)Compressing objects: 100% (4/4)Compressing objects: 100% (4/4), done.
+Writing objects:  16% (1/6)Writing objects:  33% (2/6)Writing objects:  50% (3/6)Writing objects:  66% (4/6)Writing objects:  83% (5/6)Writing objects: 100% (6/6)Writing objects: 100% (6/6), 526 bytes | 526.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 1 local object.[K
+To https://github.com/fodii/Seminar-7-8_git-practice.git
+   0c3e434..81c04dd  feature/task-01 -> feature/task-01
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/fodii/Seminar-7-8_git-practice.git
+ * [new tag]         evidence/01-hard-before -> evidence/01-hard-before
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit reset --hard HEAD~1[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit reset --hard HEAD~1
+[A
+[?2004lHEAD is now at 8f54d60 task 01 hard: state A3
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit rev-parse HEAD[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit rev-parse HEAD
+[A
+[?2004l8f54d60efbd311614bd7aa79e15a3bbb26bec0e6
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit status --short[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit status --short
+[A
+[?2004l[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit diff --cached[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit diff --cached
+[A
+[?2004l[?1h=[K[?1l>[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit diff[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit diff
+[A
+[?2004l[?1h=[K[?1l>[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mcat reset-demo.txt[27mcat reset-demo.txt
+[?2004lA3
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit push --force-with-lease origin feature/task-01[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit push --force-with-lease origin feature/task-01
+[A
+[?2004lTotal 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/fodii/Seminar-7-8_git-practice.git
+ + 81c04dd...8f54d60 feature/task-01 -> feature/task-01 (forced update)
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mecho "B3" > reset-demo.txt[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho "B3" > reset-demo.txt
+[A
+[?2004l[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit add reset-demo.txt[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit add reset-demo.txt
+[A
+[?2004l[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit commit -m "task 01: restore B3 after hard reset"[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit commit -m "task 01: restore B3 after hard reset"
+[A
+[?2004l[feature/task-01 4182515] task 01: restore B3 after hard reset
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit push origin feature/task-01[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit push origin feature/task-01
+[A
+[?2004lEnumerating objects: 5, done.
+Counting objects:  20% (1/5)Counting objects:  40% (2/5)Counting objects:  60% (3/5)Counting objects:  80% (4/5)Counting objects: 100% (5/5)Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects:  50% (1/2)Compressing objects: 100% (2/2)Compressing objects: 100% (2/2), done.
+Writing objects:  33% (1/3)Writing objects:  66% (2/3)Writing objects: 100% (3/3)Writing objects: 100% (3/3), 287 bytes | 287.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/fodii/Seminar-7-8_git-practice.git
+   8f54d60..4182515  feature/task-01 -> feature/task-01
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit log --oneline -7[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit log --oneline -7
+[A
+[?2004l[?1h=[33m4182515[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfeature/task-01[m[33m, [m[1;31morigin/feature/task-01[m[33m)[m task 01: restore B3 after hard reset[m
+[33m8f54d60[m task 01 hard: state A3[m
+[33m0c3e434[m task 01: restore B2 after mixed reset[m
+[33m6a51697[m task 01: restore B after soft reset[m
+[33m2fd892b[m reset 01: состояние A[m
+[33m1f1f39e[m task 01: форма и инструкция[m
+[33m94c1290[m[33m ([m[1;33mtag: [m[1;33mlab-start[m[33m)[m История 12: изменение проекта[m
+[K[?1l>[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit status --short[27mgit status --short
+[?2004l[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ exit
+[?2004lexit
+
