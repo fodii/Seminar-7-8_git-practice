@@ -1,0 +1,150 @@
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit switch base/task-02[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit switch base/task-02
+ [K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C git switch base/task-02[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+[?2004lSwitched to branch 'base/task-02'
+Your branch is up to date with 'origin/base/task-02'.
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mcat message.txt[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat message.txt
+[A
+[?2004lСообщение: исходная версия
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mprintf 'Сообщение: изменение из base\n' > message.txt[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cprintf 'Сообщение: изменение из base\n' > message.txt
+[A
+[?2004l[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit diff -- message.txt[27mgit diff -- message.txt git diff -- message/[K.txt[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+[?2004l[?1h=[1mdiff --git a/message.txt b/message.txt[m[m
+[1mindex 739e860..c5ebb91 100644[m[m
+[1m--- a/message.txt[m[m
+[1m+++ b/message.txt[m[m
+[36m@@ -1 +1 @@[m[m
+[31m-Сообщение: исходная версия[m[m
+[32m+[m[32mСообщение: изменение из base[m[m
+[K[?1l>[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit add message.txt[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit add message.txt git ass  dd message/ .txt                    
+[?2004l[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit commit -m "base 02: изменить сообщение"[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit commit -m "base 02: изменить сообщение"
+[?2004l[base/task-02 483cd10] base 02: изменить сообщение
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit push origin base/task-02[27mgit push origin base/task-02
+[?2004lEnumerating objects: 5, done.
+Counting objects:  20% (1/5)Counting objects:  40% (2/5)Counting objects:  60% (3/5)Counting objects:  80% (4/5)Counting objects: 100% (5/5)Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects:  50% (1/2)Compressing objects: 100% (2/2)Compressing objects: 100% (2/2), done.
+Writing objects:  33% (1/3)Writing objects:  66% (2/3)Writing objects: 100% (3/3)Writing objects: 100% (3/3), 346 bytes | 346.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/fodii/Seminar-7-8_git-practice.git
+   6c2bd17..483cd10  base/task-02 -> base/task-02
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit log --oneline -4[27mgit log --oneline -4 git log --oneline -4[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+[?2004l[?1h=[33m483cd10[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mbase/task-02[m[33m, [m[1;31morigin/base/task-02[m[33m)[m base 02: изменить сообщение[m
+[33m6c2bd17[m task 02: подготовить базовую ветку[m
+[33m94c1290[m[33m ([m[1;33mtag: [m[1;33mlab-start[m[33m)[m История 12: изменение проекта[m
+[33m9f858c5[m История 11: изменение проекта[m
+[K[?1l>[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit switch feature/task-02[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit switch feature/task-02
+[A
+[?2004lSwitched to branch 'feature/task-02'
+Your branch is up to date with 'origin/feature/task-02'.
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ пше ыефеш[K[K[K[K[K[K[K[K[Kgit status
+[?2004lOn branch feature/task-02
+Your branch is up to date with 'origin/feature/task-02'.
+
+nothing to commit, working tree clean
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit log --oneline -4[27mgit log --oneline -4
+[?2004l[?1h=[33m5d45b74[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfeature/task-02[m[33m, [m[1;31morigin/feature/task-02[m[33m)[m feature 02: добавить файл[m
+[33m8fa8ef5[m feature 02: изменить сообщение[m
+[33m6c2bd17[m task 02: подготовить базовую ветку[m
+[33m94c1290[m[33m ([m[1;33mtag: [m[1;33mlab-start[m[33m)[m История 12: изменение проекта[m
+[K[?1l>[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit tag evidence/02-before HEAD[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit tag evidence/02-before HEAD
+ [K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C git tag evidence/02-before HEAD[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+[?2004l[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit push origin evidence/02-before[27mgit push origin evidence/02-before git [[Kpush origin evidence/02-before[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+[?2004lTotal 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/fodii/Seminar-7-8_git-practice.git
+ * [new tag]         evidence/02-before -> evidence/02-before
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit rebase base/task-02[27mgit rebase base/task-02 git rebase base/task-02[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+[?2004lRebasing (1/2)Auto-merging message.txt
+CONFLICT (content): Merge conflict in message.txt
+error: could not apply 8fa8ef5... feature 02: изменить сообщение
+[33mhint: Resolve all conflicts manually, mark them as resolved with[m
+[33mhint: "git add/rm <conflicted_files>", then run "git rebase --continue".[m
+[33mhint: You can instead skip this commit: run "git rebase --skip".[m
+[33mhint: To abort and get back to the state before "git rebase", run "git rebase --abort".[m
+[33mhint: Disable this message with "git config set advice.mergeConflict false"[m
+Could not apply 8fa8ef5... # feature 02: изменить сообщение
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ ^[[200~cat message.txt~[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[7mcat message.txt[27mcat message.txt
+[?2004l<<<<<<< HEAD
+Сообщение: изменение из base
+=======
+Сообщение: изменение из feature
+>>>>>>> 8fa8ef5 (feature 02: изменить сообщение)
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mprintf 'Сообщение: изменение из base\nСообщение: изменение из feature\n' > message.txt[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cprintf 'Сообщение: изменение из base\nСообщение: изменение из feature\n' > message.txt
+[A
+[?2004l[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mcat message.txt[27mcat message.txt
+[?2004lСообщение: изменение из base
+Сообщение: изменение из feature
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit add message.txt[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit add message.txt
+[A
+[?2004l[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mGIT_EDITOR=true git rebase --continue[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CGIT_EDITOR=true git rebase --continue
+[A
+[?2004lhint: Waiting for your editor to close the file... [K[detached HEAD f86f32f] feature 02: изменить сообщение
+ Author: Учебный автор <training@example.invalid>
+ 1 file changed, 1 insertion(+)
+Rebasing (2/2)[KSuccessfully rebased and updated refs/heads/feature/task-02.
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit rebase --continue[27mgit rebase --continue
+[?2004lfatal: no rebase in progress
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7m--continue[27m--continue
+[?2004l--continue: command not found
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit status[27mgit status
+[?2004lOn branch feature/task-02
+Your branch and 'origin/feature/task-02' have diverged,
+and have 3 and 2 different commits each, respectively.
+  (use "git pull" if you want to integrate the remote branch with yours)
+
+nothing to commit, working tree clean
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit log --oneline --graph --decorate -6[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit log --oneline --graph --decorate -6
+[A
+[?2004l[?1h=* [33md1f449f[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfeature/task-02[m[33m)[m feature 02: добавить файл[m
+* [33mf86f32f[m feature 02: изменить сообщение[m
+* [33m483cd10[m[33m ([m[1;31morigin/base/task-02[m[33m, [m[1;32mbase/task-02[m[33m)[m base 02: изменить сообщение[m
+* [33m6c2bd17[m task 02: подготовить базовую ветку[m
+* [33m94c1290[m[33m ([m[1;33mtag: [m[1;33mlab-start[m[33m)[m История 12: изменение проекта[m
+* [33m9f858c5[m История 11: изменение проекта[m
+[K[?1l>[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mcat message.txt[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat message.txt
+[A
+[?2004lСообщение: изменение из base
+Сообщение: изменение из feature
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mcat feature.txt[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat feature.txt
+[A
+[?2004lФайл feature
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit range-diff 6c2bd17..evidence/02-before base/task-02..HEAD[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit range-diff 6c2bd17..evidence/02-before base/task-02..HEAD
+[?2004l[?1h=[31m1:  8fa8ef5 < -:  ------- feature 02: изменить сообщение[m[m
+[32m-:  ------- > 1:  f86f32f feature 02: изменить сообщение[m[m
+[33m2:  5d45b74 = 2:  d1f449f feature 02: добавить файл[m[m
+[K[?1l>[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit merge-base --is-ancestor base/task-02 HEAD && echo "Base is ancestor: YES"[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit merge-base --is-ancestor base/task-02 HEAD && echo "Base is ancestor: YES"
+[?2004lBase is ancestor: YES
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit diff --check[27mgit diff --check
+[?2004l[?1h=[K[?1l>[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit push --force-with-lease origin feature/task-02[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit push --force-with-lease origin feature/task-02
+[A
+[?2004lEnumerating objects: 8, done.
+Counting objects:  12% (1/8)Counting objects:  25% (2/8)Counting objects:  37% (3/8)Counting objects:  50% (4/8)Counting objects:  62% (5/8)Counting objects:  75% (6/8)Counting objects:  87% (7/8)Counting objects: 100% (8/8)Counting objects: 100% (8/8), done.
+Delta compression using up to 16 threads
+Compressing objects:  20% (1/5)Compressing objects:  40% (2/5)Compressing objects:  60% (3/5)Compressing objects:  80% (4/5)Compressing objects: 100% (5/5)Compressing objects: 100% (5/5), done.
+Writing objects:  16% (1/6)Writing objects:  33% (2/6)Writing objects:  50% (3/6)Writing objects:  66% (4/6)Writing objects:  83% (5/6)Writing objects: 100% (6/6)Writing objects: 100% (6/6), 754 bytes | 754.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 1 local object.[K
+To https://github.com/fodii/Seminar-7-8_git-practice.git
+ + 5d45b74...d1f449f feature/task-02 -> feature/task-02 (forced update)
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ [7mgit status[27mgit status
+[?2004lOn branch feature/task-02
+Your branch is up to date with 'origin/feature/task-02'.
+
+nothing to commit, working tree clean
+[?2004h]0;student@DESKTOP-GT5PE1A: ~/git-practice[01;32mstudent@DESKTOP-GT5PE1A[00m:[01;34m~/git-practice[00m$ уч[K[Kexit
+[?2004lexit
+
